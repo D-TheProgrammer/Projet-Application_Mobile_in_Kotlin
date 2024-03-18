@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/saumon" tools:context=".creer_memocard">
+    <!--  BOUTON HOME  HAUT DE PAGE   -->
+    <Button
+        android:id="@+id/buttonLogoMemorise2"
+        android:layout_width="103dp"
+        android:layout_height="107dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="278dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/marron"
+        app:backgroundTint="@null"/>
+
+    <ImageView
+        android:id="@+id/imageViewFondApprentissage"
+        android:layout_width="82dp"
+        android:layout_height="93dp"
+        android:layout_alignStart="@+id/buttonLogoMemorise2"
+        android:layout_alignTop="@+id/buttonLogoMemorise2"
+        android:layout_alignEnd="@+id/buttonLogoMemorise2"
+        android:layout_alignBottom="@+id/buttonLogoMemorise2"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="17dp"
+        app:srcCompat="@drawable/memorise"/>
+
+
+    <!--  TITRE MEMORISE HAUT DE PAGE   -->
+    <TextView
+        android:id="@+id/memorise"
+        android:layout_width="249dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/app_name"
+        android:textAppearance="@style/memorise"/>
+
+
+    <!--  TEXTE APPRENTISSAGE  -->
+    <TextView
+        android:id="@+id/rectangleWithText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="-12dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Apprentissage"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+
+    <!--  BOUTON FLECHE GAUCHE   -->
+
+
+    <Button
+        android:id="@+id/buttonFlecheGauche"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="541dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/marron"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewFlecheGauche"
+        android:layout_width="50dp"
+        android:layout_height="72dp"
+        android:layout_alignStart="@+id/buttonFlecheGauche"
+        android:layout_alignTop="@+id/buttonFlecheGauche"
+        android:layout_alignEnd="@+id/buttonFlecheGauche"
+        android:layout_alignBottom="@+id/buttonFlecheGauche"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="6dp"
+        app:srcCompat="@drawable/arrow_gauche"/>
+
+    <!--  MEMOCARD AVEC QUESTION -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="309dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="232dp"
+        android:src="@drawable/memocard_vide" />
+
+    <!--  REPONSE MEMOCARD  -->
+
+    <TextView
+        android:layout_width="223dp"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="258dp"
+        android:text="Quel est le seul Animal qui ne peut pas Sauter?"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="316dp"
+        android:layout_height="116dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="202dp"
+        android:background="@color/white"
+        android:hint="Votre Réponse à la Mémocard"/>
+
+    <!--  NOMBRE DE MEMOCARD  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="127dp"
+        android:text="1 / ? "
+        android:textSize="45dp" />
+
+    <!--  BOUTON FLECHE DROITE   -->
+
+
+    <Button
+        android:id="@+id/buttonFlecheDroite"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="311dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginBottom="107dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/marron"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewFlecheDroite"
+        android:layout_width="50dp"
+        android:layout_height="72dp"
+        android:layout_alignStart="@+id/buttonFlecheDroite"
+        android:layout_alignTop="@+id/buttonFlecheDroite"
+        android:layout_alignEnd="@+id/buttonFlecheDroite"
+        android:layout_alignBottom="@+id/buttonFlecheDroite"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="6dp"
+        app:srcCompat="@drawable/arrow_droite"/>
+
+
+    <!--  BOUTON HOME  BAS DE PAGE   -->
+
+
+    <Button
+        android:id="@+id/buttonRevenirHome1"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="633dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/marron"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewMaison1"
+        android:layout_width="103dp"
+        android:layout_height="127dp"
+        android:layout_alignStart="@+id/buttonRevenirHome1"
+        android:layout_alignTop="@+id/buttonRevenirHome1"
+        android:layout_alignEnd="@+id/buttonRevenirHome1"
+        android:layout_alignBottom="@+id/buttonRevenirHome1"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        app:srcCompat="@drawable/home"/>
+
+
+    <!--  BOUTON VALIDE   -->
+
+    <Button
+        android:id="@+id/buttonValidation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="617dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/marron"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewValidation1"
+        android:layout_width="50dp"
+        android:layout_height="86dp"
+        android:layout_alignStart="@+id/buttonValidation1"
+        android:layout_alignTop="@+id/buttonValidation1"
+        android:layout_alignEnd="@+id/buttonValidation1"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/valid" />
+
+
+
+
+</RelativeLayout>

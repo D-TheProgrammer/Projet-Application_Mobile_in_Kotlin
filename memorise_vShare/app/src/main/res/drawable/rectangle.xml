@@ -1,0 +1,25 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <!-- carré  -->
+    <item  android:bottom="-9dp"> <!-- La position de l'ombre -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FF0000" /> <!--niveau de transparence -->
+        </shape>
+    </item>
+
+
+    <!-- Ombre portée -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/marron" />
+            <size
+                android:width="100dp"
+                android:height="50dp" />
+        </shape>
+    </item>
+
+
+</layer-list>

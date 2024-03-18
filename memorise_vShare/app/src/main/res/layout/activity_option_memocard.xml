@@ -1,0 +1,235 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.memorise_v3.OptionMemocard" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/saumon"
+        tools:context=".option_memocard">
+        <!--  BOUTON HOME  HAUT DE PAGE   -->
+        <Button
+            android:id="@+id/buttonLogoMemorise_option"
+            android:layout_width="103dp"
+            android:layout_height="107dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="278dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/marron"
+            app:backgroundTint="@null" />
+
+        <ImageView
+            android:id="@+id/imageViewFondOption"
+            android:layout_width="82dp"
+            android:layout_height="93dp"
+            android:layout_alignStart="@+id/buttonLogoMemorise_option"
+            android:layout_alignTop="@+id/buttonLogoMemorise_option"
+            android:layout_alignEnd="@+id/buttonLogoMemorise_option"
+            android:layout_alignBottom="@+id/buttonLogoMemorise_option"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="17dp"
+            app:srcCompat="@drawable/memorise" />
+
+        <!--  TITRE MEMORISE HAUT DE PAGE   -->
+        <TextView
+            android:id="@+id/memorise"
+            android:layout_width="249dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="52dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/app_name"
+            android:textAppearance="@style/memorise" />
+
+        <!--  TEXTE En OPTION  -->
+        <TextView
+            android:id="@+id/rectangleAvecTexteOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="-12dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Options"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!--  INTERVALLE MEMORISATION  -->
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="244dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/intervalle_memoInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+
+                android:hint="@string/nom_intervalle_memo">
+
+                <AutoCompleteTextView
+                    android:id="@+id/interv_AutoCompleteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:background="@color/white"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <!-- Memorisation Journaliere -->
+        <LinearLayout
+            android:layout_width="381dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="324dp"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memorisation Journaliere : "
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!--  CHOIX HEURE NOTIFICATION  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="464dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/selectionTempsButton"
+                android:layout_width="146dp"
+                android:layout_height="88dp"
+                android:backgroundTint="@color/marron"
+                android:text="Selection heure notification "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tempsSelectionne"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="08h22"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:id="@+id/enclencherAlarmButton"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/marron"
+                android:src="@drawable/valid"
+                android:text="Enclencher Alarme"
+                android:textSize="26dp" />
+
+            <ImageButton
+                android:id="@+id/annulerAlarmButton"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/marron"
+                android:src="@drawable/poubelle"
+                android:text="Annuler Alarm"
+
+                android:textSize="26dp" />
+
+
+        </LinearLayout>
+
+        <!--  BOUTON HOME  BAS DE PAGE   -->
+        <Button
+            android:id="@+id/buttonRevenirHome_Option"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="582dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/marron"
+            app:backgroundTint="@null"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageViewMaison_Option"
+            android:layout_width="103dp"
+            android:layout_height="127dp"
+            android:layout_alignStart="@+id/buttonRevenirHome_Option"
+            android:layout_alignTop="@+id/buttonRevenirHome_Option"
+            android:layout_alignEnd="@+id/buttonRevenirHome_Option"
+            android:layout_alignBottom="@+id/buttonRevenirHome_Option"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="6dp"
+            app:srcCompat="@drawable/home" />
+
+    </RelativeLayout>
+</layout>

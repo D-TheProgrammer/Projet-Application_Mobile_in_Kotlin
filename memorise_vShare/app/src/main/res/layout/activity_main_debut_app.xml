@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/saumon"
+    tools:context=".MainActivity">
+
+    <!-- LOGO GEANT -->
+
+    <ImageView
+        android:id="@+id/imageViewFondLogoGeant"
+        android:layout_width="209dp"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="89dp"
+        android:src="@drawable/circle"
+        app:layout_constraintHorizontal_bias="0.333"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <ImageView
+        android:layout_width="114dp"
+        android:layout_height="202dp"
+        android:layout_alignTop="@+id/imageViewFondLogoGeant"
+        android:layout_alignEnd="@+id/imageViewFondLogoGeant"
+        android:layout_alignBottom="@+id/imageViewFondLogoGeant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/memorise"
+        app:layout_constraintHorizontal_bias="0.495"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <!-- BOUTON CREATION MEMOCARD -->
+
+    <Button
+        android:id="@+id/buttonCreationMemoCard"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginBottom="333dp"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/marron"
+        android:text="Création de MemoCard"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <!-- BOUTON COLLECTION -->
+    <Button
+        android:id="@+id/buttonCollection"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginBottom="141dp"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/marron"
+        android:text="Collection"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <!-- BOUTON REVISION -->
+    <Button
+        android:id="@+id/buttonRevision"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginBottom="237dp"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/marron"
+        android:text="Révision"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <!-- BOUTON OPTION -->
+    <Button
+        android:id="@+id/buttonOption"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/marron"
+        android:text="Options"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="279dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CardFragment"
+
+    android:background="@color/saumon">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.memorise_v3.CardViewModel"
+            />
+    </data>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+            <!--  BOUTON HOME  HAUT DE PAGE   -->
+            <Button
+                android:id="@+id/buttonLogoMemoriseCreation"
+                android:layout_width="103dp"
+                android:layout_height="107dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="278dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/marron"
+                app:backgroundTint="@null" />
+
+            <ImageView
+                android:id="@+id/imageViewFondCreation"
+                android:layout_width="82dp"
+                android:layout_height="93dp"
+                android:layout_alignStart="@+id/buttonLogoMemoriseCreation"
+                android:layout_alignTop="@+id/buttonLogoMemoriseCreation"
+                android:layout_alignEnd="@+id/buttonLogoMemoriseCreation"
+                android:layout_alignBottom="@+id/buttonLogoMemoriseCreation"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="17dp"
+                app:srcCompat="@drawable/memorise"/>
+
+            <!--  TITRE MEMORISE HAUT DE PAGE   -->
+            <TextView
+                android:id="@+id/memorise"
+                android:layout_width="249dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="52dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/app_name"
+                android:textAppearance="@style/memorise"/>
+
+            <!--  TEXTE CREATION  -->
+            <TextView
+                android:id="@+id/rectangleAvecTexteCreation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="155dp"
+                android:layout_marginEnd="-12dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Collection de MemoCard"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+
+        <!--  Recycler View liste des memocard  -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/memocard_list"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="top"
+            android:layout_marginTop="224dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <!--  TEXTE APPRIS -->
+
+        <TextView
+            android:id="@+id/rectangleAvecTexteApris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="377dp"
+            android:layout_marginEnd="-12dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Appris"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!--bOUTON HOME-->
+        <Button
+            android:id="@+id/buttonRevenirHome_FragmentCard"
+            android:layout_width="118dp"
+            android:layout_height="131dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/marron"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <ImageView
+                android:id="@+id/imageViewMaison_FragmentCard"
+                android:layout_width="103dp"
+                android:layout_height="127dp"
+                android:layout_alignStart="@+id/buttonRevenirHome_FragmentCard"
+                android:layout_alignTop="@+id/buttonRevenirHome_FragmentCard"
+                android:layout_alignEnd="@+id/buttonRevenirHome_FragmentCard"
+                android:layout_alignBottom="@+id/buttonRevenirHome_FragmentCard"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonRevenirHome_FragmentCard"
+                app:layout_constraintEnd_toEndOf="@+id/buttonRevenirHome_FragmentCard"
+                app:layout_constraintStart_toStartOf="@+id/buttonRevenirHome_FragmentCard"
+                app:layout_constraintTop_toTopOf="@+id/buttonRevenirHome_FragmentCard"
+                app:srcCompat="@drawable/home" />
+
+        <!--
+            <Button
+                android:id="@+id/enregistrer_memocard_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="110dp"
+                android:layout_marginBottom="299dp"
+                android:onClick="@{() -> viewModel.ajoutCard()}"
+                android:text="Ajouter Memocard" />
+
+
+        <ImageView
+            android:id="@+id/imageView_CardVide"
+            android:layout_width="match_parent"
+            android:layout_height="382dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="204dp"
+            android:src="@drawable/memocard_vide" />
+
+        <EditText
+            android:id="@+id/card_titre"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="311dp"
+            android:layout_marginEnd="39dp"
+            android:hint="Créer une Nouvelle MemoCard"
+            android:inputType="text"
+            android:text="@={viewModel.newCardTitre}" />
+
+        <EditText
+            android:id="@+id/card_theme"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_titre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:hint="Indiquez le thème de la MemoCard"
+            android:inputType="text"
+            android:text="@={viewModel.newCardTheme}" />
+
+        <EditText
+            android:id="@+id/card_description"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_theme"
+            android:layout_centerHorizontal="true"
+            android:hint="Créer une description"
+            android:inputType="text"
+            android:text="@={viewModel.newCardDescription}" />
+
+        -->
+
+
+    </RelativeLayout>
+
+
+
+
+
+</layout>

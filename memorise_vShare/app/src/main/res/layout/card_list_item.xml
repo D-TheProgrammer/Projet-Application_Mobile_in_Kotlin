@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="card"
+            type="com.example.memorise_v3.Card" />
+    </data>
+
+    <!--CREATION DES DESIGN DES ITEM DE LA LISTE COLLECTION-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:background="@color/saumon"
+        app:cardBackgroundColor="@color/saumon"
+        app:cardElevation="16dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/memocard_vide" />
+
+        <CheckBox
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:checked="@{card.fini}"
+            android:clickable="false"
+            android:padding="8dp"
+
+            android:text='@{card.titre + "\n" + "    "+ "Thème: "+ card.theme}'
+            android:textAlignment="center"
+            android:textSize="26dp"
+
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+</layout>
+
