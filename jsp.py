@@ -1,2 +1,1 @@
-def fonction : 
-  ok 
+# test
