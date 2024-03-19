@@ -7,9 +7,9 @@
 </div>
 
 #### SOMMAIRE / SUMMARY
-- [Présentation en francais / Presentation in French](#english-presentation)
-- [Préparation à l'utilisation de l'application / Preparing to use the application](#preparing-to-use-the-application)
-- [Utilisation de l'application - Tutoriel / Using the app - Tutorial](#using-the-application---tutorial)
+- [Presentation in English / Présentation en anglais](#english-presentation)
+- [Preparing to use the application / Préparation à l'utilisation de l'application](#preparing-to-use-the-application)
+- [Using the app - Tutorial / Utilisation de l'application - Tutoriel](#using-the-application---tutorial)
 
 ## [ENGLISH PRESENTATION]
 This file constitutes a final project in Mobile Development done by D-TheProgrammer
