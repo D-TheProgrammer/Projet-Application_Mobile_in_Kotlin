@@ -7,7 +7,7 @@
 </div>
 
 #### SOMMAIRE / SUMMARY
-- [Presentation in English / Présentation en anglais](#english-presentation)
+- [English Presentation / Présentation en anglais](#english-presentation)
 - [Preparing to use the application / Préparation à l'utilisation de l'application](#preparing-to-use-the-application)
 - [Using the app - Tutorial / Utilisation de l'application - Tutoriel](#using-the-application---tutorial)
 
