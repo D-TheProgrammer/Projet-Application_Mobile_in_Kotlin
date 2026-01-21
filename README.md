@@ -2,6 +2,12 @@
 [French] Projet d'une Application Mobile nommé MemoRise (le fichier Readme en anglais se trouve dans le fichier appelé `README_ENGLISH`)  
 [English] Mobile Application Project called MemoRise (the English Readme is in the file called `README_ENGLISH`)     
 
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white)
+![XML](https://img.shields.io/badge/XML-Layout-orange)
+![SQLite](https://img.shields.io/badge/SQLite-Database-blue)
+![Status](https://img.shields.io/badge/Status-Complete-success)
+
 <div align="center">
   <img width="223" alt="image" src="https://github.com/D-TheProgrammer/Projet-Application_Mobile_in_Kotlin/assets/151149998/7f9cae5d-be46-4496-9621-daedca19b6b4">
 </div>
